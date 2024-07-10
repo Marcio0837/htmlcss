@@ -8,6 +8,12 @@
     src: url(fontes/idroid.otf) format(opentype);
 }
 
+@media print {
+     img, .video {
+        display: none;
+     }
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -26,8 +32,8 @@ header{
 }
 
 header h1 {
-    font-family: var(--fonte-destaque);
-    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4em;
 }
 
 header p {
@@ -68,17 +74,18 @@ main{
 }
 
 main h1{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: normal;
     font-family: 'Android';
     background-image: linear-gradient(to right, #619E61, transparent);
-    padding: 5px;
+    padding: 3px;
 }
 
 main h2{
     font-size: 1.6em;
     font-weight: normal;
-    font-family: var(--fonte-android);
+    font-family: 'Android';
+    background-image: linear-gradient(to right, #619E61, transparent);
 }
 
 .video {
